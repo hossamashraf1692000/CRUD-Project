@@ -1,0 +1,72 @@
+<html>  
+        <head>
+<link rel="stylesheet" href="css/Test.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        </head> 
+
+    <body>
+            <h1 id="New"></h1>
+            <h2 class=""></h2>
+
+                <div class="container py-5 ">
+
+                        <div class="form-groub">
+
+                                <label for="ProductNameInput">ProductName :</label>
+                                <input class="form-control" type="text" id="ProductNameInput">
+                        </div>
+
+                        <div class="form-groub">
+
+                                <label for="ProductPriceInput">Productprice :</label>
+                                <input class="form-control" type="text" id="ProductPriceInput">
+                        </div>
+
+                        <div class="form-groub">
+
+                                <label for="ProductCategryInput">ProductCategry :</label>
+                                <input class="form-control" type="text" id="ProductCategryInput">
+                        </div>
+
+                        <div class="form-groub">
+
+                                <label for="ProductDescInput">ProductD esc :</label>
+                                <textarea class="form-control" type="text" id="ProductDescInput"> </textarea>
+                        </div>  
+
+                        <button onclick="welcome ()" class="btn btn-outline-info m-4">add Product</button>
+                </div>
+
+                
+
+                <div class="container">
+
+                        <input onkeyup="searchProducts(this.value)" class="form-control w-75 m-auto" type="text" placeholder="Search.." name="" id="">
+                                <!-- this related to input and get  the value from it and send to function -->
+                        <table class="table mt-4">
+                                <thead>
+                                        <th>index</th>
+                                        <th>ProductName</th>
+                                        <th>ProductPrice</th>
+                                        <th>ProductCategry</th>
+                                        <th>ProductDesc</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+                                </thead>
+
+                                <tbody id="tabelBody" >
+                                     
+                                </tbody>
+                        </table>
+                </div>
+
+              
+        
+
+<script src="js/java.js"></script>
+      </body>
+    
+</html>
